@@ -37,7 +37,7 @@ ActivityMainBinding binding;
                         if (task.isSuccessful())
                         {
                             Toast.makeText(MainActivity.this, "Log In", Toast.LENGTH_SHORT).show();
-
+                            startActivity(new Intent(MainActivity.this,DashBoardActivity.class));
                         }else {
                         Toast.makeText(MainActivity.this,task.getException().getLocalizedMessage() , Toast.LENGTH_SHORT).show();
                     }
